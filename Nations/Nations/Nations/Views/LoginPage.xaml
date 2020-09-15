@@ -3,6 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Nations.Views.LoginPage">
-  
+             x:Class="Nations.Views.LoginPage"
+                BackgroundColor="{StaticResource ColorBackground}"
+             Title="{Binding Title}">
+    
+    
+    
+    <AbsoluteLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     AbsoluteLayout.LayoutFlags="All" 
+                     Padding="5">
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <Entry Placeholder="Email"
+                                       Keyboard="Email"
+                                       Text="{Binding Email}" />
+                        <Entry Placeholder="Password" 
+                                       IsPassword="True"
+                                       Text="{Binding Password}" />
+                    </StackLayout>
+
+                    <Label FontAttributes="Bold"
+                               HorizontalOptions="Center" 
+                               Text="Forgot Password?"
+                               TextColor="{StaticResource ColorAccent}"
+                               VerticalOptions="CenterAndExpand">
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button Command="{Binding LoginCommand}" 
+                        IsEnabled="{Binding IsEnabled}"
+                        Text="Login"/>
+                <Button Command="{Binding RegisterCommand}" 
+                        IsEnabled="{Binding IsEnabled}"
+                        Text="Register"
+                        Style="{StaticResource DangerButton}"/>
+            </StackLayout>
+        </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>
+    
+    
