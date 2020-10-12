@@ -108,7 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Nations\Nations.csproj">
-      <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
+      <Project>{719E6910-F64E-456C-B24F-F05DEF6DC9BE}</Project>
       <Name>Nations</Name>
     </ProjectReference>
   </ItemGroup>

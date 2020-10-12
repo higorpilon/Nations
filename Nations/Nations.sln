@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nations", "Nations\Nations\Nations.csproj", "{719E6910-F64E-456C-B24F-F05DEF6DC9BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nations", "Nations\Nations\Nations.csproj", "{719E6910-F64E-456C-B24F-F05DEF6DC9BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nations.Android", "Nations\Nations.Android\Nations.Android.csproj", "{12E1F847-1A63-44E8-BEAF-1F4CC9AB932C}"
 EndProject

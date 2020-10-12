@@ -5,6 +5,7 @@ using Nations.Views;
 using Xamarin.Essentials.Interfaces;
 using Xamarin.Essentials.Implementation;
 using Xamarin.Forms;
+using Nations.Services;
 
 namespace Nations
 {
@@ -25,7 +26,8 @@ namespace Nations
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
-
+            containerRegistry.Register<IApiService, ApiService>();
+            containerRegistry.Register<INetworkService, NetworkService>();
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
